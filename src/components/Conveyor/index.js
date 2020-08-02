@@ -5,7 +5,6 @@ const Conveyor = () => {
     return (
         <div className="conveyor_wrapper">
             <ConveyorRamp />
-            <div>Conveyor</div>
         </div>
     );
 }

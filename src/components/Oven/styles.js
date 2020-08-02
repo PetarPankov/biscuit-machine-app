@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const InnerBox = styled.div`
   border: 2px solid #666666;
   border-bottom: none;
-  width: 385px;
+  width: 185px;
   height: 48px;
   background-color: #ffffff;
 `;
 
 export const OuterBox = styled.div`
   border: 2px solid #666666;
-  width: 400px;
+  width: 200px;
   height: 100px;
   background-color: #ffffff;  
   display: flex;
@@ -20,7 +20,7 @@ export const OuterBox = styled.div`
 
 export const Heater = styled.div`
   border: 2px solid #666666;
-  width: 375px;
+  width: 175px;
   height: 5px;
   background-color: #e06666;  
   margin: 0 auto;

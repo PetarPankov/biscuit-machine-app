@@ -7,7 +7,6 @@ const BiscuitBox = () => {
             <OuterBox>
                 <InnerBox />
             </OuterBox>
-            <div>BiscuitBox</div>
         </div>
     );
 }

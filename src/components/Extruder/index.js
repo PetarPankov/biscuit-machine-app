@@ -3,12 +3,11 @@ import { ExtruderBox, ExtruderBoxWrapper, MixtureCookie, InletBox } from './styl
 
 const Extruder = () => {
     return (
-        <div className="extruder_wrapper">
+        <div  style={{ marginTop: '35px' }} className="extruder_wrapper">
             <ExtruderBoxWrapper />
             <ExtruderBox />
             <MixtureCookie />
             <InletBox />
-            <div> Extruder </div>
         </div>
     );
 }

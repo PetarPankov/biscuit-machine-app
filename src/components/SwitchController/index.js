@@ -18,7 +18,6 @@ const SwitchController = () => {
                     <Title>On</Title>
                 </div>
             </SwitchBox>
-            <div>Switch</div>
         </div>
     );
 }

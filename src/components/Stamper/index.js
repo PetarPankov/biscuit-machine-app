@@ -3,10 +3,9 @@ import { ExtruderBox, ExtruderBoxWrapper } from './styles';
 
 const Stamper = () => {
     return (
-        <div className="stamper_wrapper">
+        <div style={{ marginTop: '35px' }} className="stamper_wrapper">
             <ExtruderBoxWrapper />
             <ExtruderBox />
-            <div>Stamper</div>
         </div>
     );
 }

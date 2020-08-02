@@ -3,13 +3,12 @@ import { InnerBox, OuterBox, Heater } from './styles';
 
 const Oven = () => {
     return (
-        <div style={{ marginTop: '67px' }} className="oven-wrapper">
+        <div style={{ marginTop: '67px' }} className="oven_wrapper">
             <OuterBox>
                 <InnerBox>
                     <Heater />
                 </InnerBox>
             </OuterBox>
-            <div>Oven</div>
         </div>
     );
 }

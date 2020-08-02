@@ -3,11 +3,10 @@ import { InnerWheel, OuterWheel } from './styles';
 
 const Motor = () => {
     return (
-        <div className="Motor-wrapper">
+        <div className="motor_wrapper">
             <OuterWheel>
                 <InnerWheel />
             </OuterWheel>
-            <div>Motor</div>
         </div>
     );
 }

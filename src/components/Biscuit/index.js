@@ -2,7 +2,7 @@ import React from 'react';
 
 const Biscuit = () => {
   return (
-    <div className="Biscuit-wrapper">
+    <div className="biscuit_wrapper">
       Biscuit
     </div>
   );
