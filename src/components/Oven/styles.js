@@ -22,8 +22,8 @@ export const Heater = styled.div`
   border: 2px solid #666666;
   width: 175px;
   height: 5px;
-  background-color: #e06666;  
+  background-color: ${props => props.isHeaterOn ? ' #e06666' : '#666666'};
+  transition: 3s;
   margin: 0 auto;
   margin-top: 5px;
-
 `;
