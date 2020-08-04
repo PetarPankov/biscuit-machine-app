@@ -21,3 +21,23 @@ code {
     flex-direction: column;
 
 }
+
+
+
+.test{
+    position: relative;
+    top: 29px;
+    left: 46px;
+    margin-left:50px;
+    animation: rawbiscuit 10s linear infinite;
+  }
+  
+  @keyframes rawbiscuit {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(640px, 0);
+    }
+  }
+  

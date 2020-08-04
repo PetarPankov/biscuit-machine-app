@@ -11,7 +11,7 @@ import SwitchController from '../../components/SwitchController';
 
 import useMachineEngine from '../../hooks/machineEngine';
 
-//import { OFF } from '../../constants';
+import { ON } from '../../constants';
 
 const BiscuitMachine = () => {
 
@@ -25,6 +25,8 @@ const BiscuitMachine = () => {
         switchPosition
     } = useMachineEngine();
 
+    const  isMoving = switchPosition === ON;
+    
     return (
         <div className="biscuit_machine_wrapper">
             <div style={{
@@ -49,13 +51,13 @@ const BiscuitMachine = () => {
                     </div>
 
                     <div style={{ marginBottom: '60px' }}>
-                        <Conveyor />
+                        <Conveyor isMoving={isMoving} />
                     </div>
                     <div style={{
                         display: 'flex',
                         justifyContent: 'space-around'
                     }}>
-                        <Motor />
+                        <Motor isMoving={isMoving} />
                         <SwitchController
                             selectedPosition={switchPosition}
                             setControllerPosition={setProcess}

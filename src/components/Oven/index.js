@@ -44,9 +44,9 @@ const Oven = (props) => {
       }, 1000); */
 
 
-    console.log(temp, 'temp');
+   /*  console.log(temp, 'temp');
     console.log(isHeaterOn, 'Heating Element');
-
+ */
     return (
         <div style={{ marginTop: '67px' }} className="oven_wrapper">
             <OuterBox>

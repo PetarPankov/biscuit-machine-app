@@ -4,7 +4,9 @@ const initialState = {
     machineState: {
         oven: {
             isOn: false,
-            isHeaterOn: false
+            isHeaterOn: false,
+            isReady: false,
+            hasCookieInOven: false
         },
         conveyor: {
             isOn: false
@@ -26,7 +28,7 @@ const initialState = {
 const machineEngineReducer = (currentMachineState, action) => {
     switch (action.type) {
         case 'UPDATE_MACHINE_ENGINE':
-            currentMachineState = currentMachineState[action.machineType].isOn = action.state;
+            currentMachineState[action.machineType][action.machineProp] = action.state;
             return currentMachineState;
         case 'UPDATE_SWITCH_POSITION':
             return {
@@ -41,8 +43,8 @@ const useMachineEngine = () => {
     const [machineEngineState, dispatchAction] = useReducer(machineEngineReducer, initialState);
 
     const updateMachineEngineState = useCallback(
-        (state, machineType) => {
-            dispatchAction({ type: 'UPDATE_MACHINE_ENGINE', state, machineType});
+        (state, machineType, machineProp) => {
+            dispatchAction({ type: 'UPDATE_MACHINE_ENGINE', state, machineType, machineProp});
         },
         []
     );
